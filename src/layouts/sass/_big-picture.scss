@@ -1,0 +1,72 @@
+body {
+  background-color: $mywhite;
+  font-family: 'TheinReg';
+}
+h1 {
+  font-family: 'Playfair Display';
+  color: $blue;
+}
+a {
+  color: $blue;
+}
+a:visited {
+  color: $blue;
+}
+p {
+  font-size: 1.25em;
+  letter-spacing: 0.5px;
+  margin: 12px 0;
+  line-height: 1.5;
+}
+header {
+  a {
+    text-decoration: none;
+    transition: 0.3s color;
+  }
+  a:hover {
+    color: $softblack;
+  }
+  .container {
+    display: grid;
+    max-width: 1000px;
+    grid-template-columns: 12fr;
+    margin: 0 auto;
+    padding: 0 50px;
+    nav {
+      align-self: center;
+      a {
+        font-size: 1.2em;
+        margin-right: 30px;
+        font-family: TheinLight;
+        letter-spacing: 1px;
+      }
+    }
+  }
+  h1 {
+    font-size: 50px;
+    letter-spacing: -2.25px;
+    grid-column-start: 5;
+  }
+}
+.white-block,
+.tan-block {
+  padding: 50px 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+  h1 {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    font-size: 2.5em;
+    letter-spacing: -1.5px;
+  }
+  p {
+    width: 100%;
+    max-width: 800px;
+  }
+}
+.tan-block {
+  background-color: $tan;
+}
