@@ -1,10 +1,14 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import Img from 'gatsby-image';
 
-const AboutPage = () => (
+const AboutPage = ({ data }) => (
   <div className="main-body">
     <div className="tan-block">
       <h1>About Joe Cooper</h1>
+      <div style={{ width: `800px` }}>
+        <Img sizes={data.itMeToo.sizes} />
+      </div>
       <p>
         I’m a front-end developer and graphic designer based in New York City. For the past five
         years, I’ve worked full-time at CASES where I currently serve as its Associate Director of
@@ -24,7 +28,7 @@ const AboutPage = () => (
 
       <p>
         In addition to anything design, I also enjoy experimental music, retro gaming, and futilely
-        rooting for the Buffalo Bills.
+        rooting for the Buffalo Bills. solo
       </p>
       <Link to="/">Go back to the homepage</Link>
     </div>
@@ -32,3 +36,13 @@ const AboutPage = () => (
 );
 
 export default AboutPage;
+
+export const query = graphql`
+  query ItMe {
+    itMeToo: imageSharp(id: { regex: "/itme/" }) {
+      sizes(maxWidth: 1200) {
+        ...GatsbyImageSharpSizes_tracedSVG
+      }
+    }
+  }
+`;
