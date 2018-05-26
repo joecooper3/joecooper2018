@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import Img from 'gatsby-image';
 
-const AboutPage = ({ data }) => (
+const AboutPage = ({ data }) => ( //eslint-disable-line
   <div className="main-body">
     <div className="tan-block">
       <h1>About Joe Cooper</h1>
@@ -10,7 +10,7 @@ const AboutPage = ({ data }) => (
         <Img sizes={data.itMeToo.sizes} />
       </div>
       <p>
-        I’m a front-end developer and graphic designer based in New York City. For the past five
+        I’m a front-end developer and graphic designer based in New York City. For the past six
         years, I’ve worked full-time at CASES where I currently serve as its Associate Director of
         Communications and Design. (You can see a sampling of my web work with them here and print
         work here.)
@@ -37,7 +37,8 @@ const AboutPage = ({ data }) => (
 
 export default AboutPage;
 
-export const query = graphql`
+export const query = graphql // eslint-disable-line
+` 
   query ItMe {
     itMeToo: imageSharp(id: { regex: "/itme/" }) {
       sizes(maxWidth: 1200) {
