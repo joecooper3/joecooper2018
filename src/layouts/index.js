@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
 import Header from '../components/header';
+import Footer from '../components/Footer';
 import './index.scss';
 
 const Layout = ({ children }) => (
@@ -22,6 +23,7 @@ const Layout = ({ children }) => (
     />
     <Header siteTitle="Joe Cooper" />
     <div>{children()}</div>
+    <Footer />
   </div>
 );
 

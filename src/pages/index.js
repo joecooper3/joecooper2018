@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
+import SocialMedia from '../components/SocialMedia';
+
 const IndexPage = () => (
   <div className="main-body">
     <div className="intro-block">
@@ -24,6 +26,7 @@ const IndexPage = () => (
           see his portfolio
         </Link>
       </p>
+      <SocialMedia />
     </div>
   </div>
 );
