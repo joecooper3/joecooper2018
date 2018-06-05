@@ -48,13 +48,11 @@ header {
     grid-column-start: 5;
   }
 }
-.white-block,
-.tan-block {
-  padding: 50px 0;
+.main-body {
+  background-color: $tan;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  width: 100%;
   h1 {
     width: 100%;
     max-width: 800px;
@@ -66,6 +64,15 @@ header {
     width: 100%;
     max-width: 700px;
   }
+}
+.white-block,
+.tan-block {
+  padding: 50px 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
 }
 .tan-block {
   background-color: $tan;

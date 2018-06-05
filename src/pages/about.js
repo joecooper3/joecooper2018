@@ -4,9 +4,8 @@ import Img from 'gatsby-image';
 
 const AboutPage = ({ data }) => ( //eslint-disable-line
   <div className="main-body">
-    <div className="tan-block">
       <h1>About Joe Cooper</h1>
-      <div style={{ width: `800px` }}>
+      <div style={{ width: `800px`, margin: `10px 0 30px 0` }}>
         <Img sizes={data.itMeToo.sizes} />
       </div>
       <p>
@@ -28,11 +27,10 @@ const AboutPage = ({ data }) => ( //eslint-disable-line
 
       <p>
         In addition to anything design, I also enjoy experimental music, retro gaming, and futilely
-        rooting for the Buffalo Bills. solo
+        rooting for the Buffalo Bills.
       </p>
       <Link to="/">Go back to the homepage</Link>
     </div>
-  </div>
 );
 
 export default AboutPage;
