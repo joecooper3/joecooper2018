@@ -72,7 +72,9 @@ header {
   flex-flow: column nowrap;
   align-items: center;
   width: 100%;
-  max-width: 800px;
+}
+.white-block {
+  background-color: $mywhite;
 }
 .tan-block {
   background-color: $tan;

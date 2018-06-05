@@ -17,7 +17,8 @@ const Layout = ({ children }) => (
         },
         {
           name: 'keywords',
-          content: 'front end, designer, new york, visual design, ux, reactjs, html, css, javascript'
+          content:
+            'front end, designer, new york, visual design, ux, reactjs, html, css, javascript'
         }
       ]}
     />

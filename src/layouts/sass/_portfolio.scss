@@ -1,0 +1,35 @@
+.flex-row {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+.two-thirds {
+    flex: 1 1 450px;
+    width: 100%;
+    max-width: 700px;
+    padding: 0 25px;
+}
+.one-third {
+    flex: 1 1 300px;
+    max-width: 400px;
+    padding: 0 25px;
+}
+.summary-box {
+    background-color: $mywhite;
+    border: 1.0px solid $blue;
+    box-shadow: 5px 5px $blue;
+    margin: 10px 30px;
+    width: 100%;
+    height: 200px;
+    max-width: 275px;
+    padding: 20px;
+    h2 {
+        font-family: TheinBold;
+        color: $blue;
+        text-align: center;
+    }
+}
