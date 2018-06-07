@@ -3,7 +3,6 @@ import Link from 'gatsby-link';
 import Img from 'gatsby-image';
 
 const AboutPage = ({ data }) => ( //eslint-disable-line
-) => (
   <div className="main-body">
     <h1>About Joe Cooper</h1>
     <div style={{ width: `800px`, margin: `10px 0 30px 0` }}>

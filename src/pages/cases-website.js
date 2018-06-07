@@ -11,7 +11,7 @@ const CasesWebsite = ({ data }) => ( // eslint-disable-line
       <div className="two-thirds" style={{ margin: `10px 0 30px 0` }}>
         <Img sizes={data.casesSpread.sizes} />
       </div>
-      <SummaryBox>
+      <SummaryBox techs={['wordpress', 'sass', 'jquery', 'grunt', 'illustrator', 'indesign']}>
         <p>I sure did</p>
       </SummaryBox>
     </div>
