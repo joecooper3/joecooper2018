@@ -7,8 +7,8 @@ class SummaryBox extends Component {
   render() {
     return (
       <div className="summary-box">
-        <h2>Summary</h2>
-        {this.props.children}
+        {/* <h2>Summary</h2>
+        {this.props.children} */}
         {this.props.techs.length > 0 && <h2>Tech Used</h2>}
         {this.props.techs.length > 0 &&
           this.props.techs.map(item => <TechSlot key={item} tech={item} />)}
