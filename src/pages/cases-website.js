@@ -49,25 +49,29 @@ const CasesWebsite = ({ data }) => ( // eslint-disable-line
       </div>
     </div>
     <div className="white-block">
-      <p className="one-third">
-        Prior to the re-design, CASES’ site was only optimized for desktop viewing; trying to view
-        the site from a mobile device was nearly impossible. The new iteration of CASES’ site was
-        the first to be fully responsive.
-      </p>
-      <div className="two-thirds">
-        <Img sizes={data.responsive.sizes} />
+      <div className="flex-row">
+        <p className="one-third">
+          Prior to the re-design, CASES’ site was only optimized for desktop viewing; trying to view
+          the site from a mobile device was nearly impossible. The new iteration of CASES’ site was
+          the first to be fully responsive.
+        </p>
+        <div className="two-thirds">
+          <Img sizes={data.responsive.sizes} />
+        </div>
       </div>
     </div>
     <div className="tan-block">
-      <div className="two-thirds">
-        <Img sizes={data.refEmail.sizes} />
+      <div className="flex-row">
+        <div className="two-thirds">
+          <Img sizes={data.refEmail.sizes} />
+        </div>
+        <p className="one-third">
+          The new referrals page allows judges, lawyers, and community members to recommend
+          individuals directly to an appropriate staff member’s email. Previously, interested
+          parties either needed to directly email a general information account or call a direct
+          contact within the organization.
+        </p>
       </div>
-      <p className="one-third">
-        The new referrals page allows judges, lawyers, and community members to recommend
-        individuals directly to an appropriate staff member’s email. Previously, interested parties
-        either needed to directly email a general information account or call a direct contact
-        within the organization.
-      </p>
     </div>
     <div className="white-block">
       <p>
@@ -86,16 +90,21 @@ const CasesWebsite = ({ data }) => ( // eslint-disable-line
       </div>
     </div>
     <div className="tan-block">
-      <div className="two-thirds">
-        <Img sizes={data.wordpress.sizes} />
+      <div className="flex-row">
+        <div className="two-thirds">
+          <Img sizes={data.wordpress.sizes} />
+        </div>
+        <p className="one-third">
+          A big priority when re-designing the site was making sure that its back end was accessible
+          to more of the CASES staff. By using WordPress as a CMS, CASES’ communications team is
+          able to easily add new content to the site without any HTML knowledge. Additionally, I
+          built custom modules into CASES’ WordPress theme, allowing staff to make changes to copy
+          without potentially compromising the rest of the site’s layout.
+        </p>
       </div>
-      <p className="one-third">
-        A big priority when re-designing the site was making sure that its back end was accessible
-        to more of the CASES staff. By using WordPress as a CMS, CASES’ communications team is able
-        to easily add new content to the site without any HTML knowledge. Additionally, I built
-        custom modules into CASES’ WordPress theme, allowing staff to make changes to copy without
-        potentially compromising the rest of the site’s layout.
-      </p>
+    </div>
+    <div className="white-block">
+      <Link to="/nyc-bigapps">NYC Big Apps</Link>
     </div>
   </div>
 );
