@@ -1,17 +1,17 @@
 import React from 'react';
+import Link from 'gatsby-link';
 import Img from 'gatsby-image';
 
-import PortfolioNav from '../components/PortfolioNav';
 import SummaryBox from '../components/SummaryBox';
 
-const CasesWebsite = ({ data }) => ( // eslint-disable-line
+const CasesPortal = ({ data }) => ( // eslint-disable-line
   <div className="main-body">
-    <h1>CASES Website</h1>
+    <h1>CASES Portal</h1>
     <div className="flex-row">
       <div className="two-thirds-top" style={{ margin: `10px 0 30px 0` }}>
         <Img sizes={data.casesSpread.sizes} />
       </div>
-      <SummaryBox techs={['wordpress', 'sass', 'jquery', 'grunt', 'illustrator', 'indesign']}>
+      <SummaryBox techs={['react', 'wordpress rest api', 'sass', 'webpack', 'sketch', 'invision']}>
         <p>I sure did</p>
       </SummaryBox>
     </div>
@@ -38,13 +38,13 @@ const CasesWebsite = ({ data }) => ( // eslint-disable-line
         In 2016, I led a visual rebranding campaign, starting with the launch of a new CASES website
         I designed and developed.
       </p>
-      <div className="single-image" style={{ marginTop: `50px` }}>
+      <div style={{ width: `700px`, margin: `50px 0 10px 0` }}>
         <Img sizes={data.screenCapture2.sizes} />
       </div>
-      <div className="single-image">
+      <div style={{ width: `700px`, margin: `50px 0 10px 0` }}>
         <Img sizes={data.screenCapture1.sizes} />
       </div>
-      <div className="single-image">
+      <div style={{ width: `700px`, margin: `50px 0 10px 0` }}>
         <Img sizes={data.screenCapture3.sizes} />
       </div>
     </div>
@@ -103,15 +103,17 @@ const CasesWebsite = ({ data }) => ( // eslint-disable-line
         </p>
       </div>
     </div>
-    <PortfolioNav />
+    <div className="white-block">
+      <Link to="/nyc-bigapps">NYC Big Apps</Link>
+    </div>
   </div>
 );
 
-export default CasesWebsite;
+export default CasesPortal;
 
 export const query = graphql // eslint-disable-line
 ` 
-  query CasesWebsite {
+  query CasesPortal {
     casesSpread: imageSharp(id: { regex: "/cases-spread@2x/" }) {
       sizes(maxWidth: 1200) {
         ...GatsbyImageSharpSizes_tracedSVG

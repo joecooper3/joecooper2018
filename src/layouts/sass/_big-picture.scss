@@ -72,6 +72,7 @@ header {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
   width: 100%;
 }
 .white-block {
@@ -79,6 +80,10 @@ header {
 }
 .tan-block {
   background-color: $tan;
+}
+.single-image {
+  width: 750px;
+  margin: 30px 0 10px 0;
 }
 footer {
   color: $mywhite;
