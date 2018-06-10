@@ -6,7 +6,7 @@
   "dependencies": {
     "eslint-plugin-prettier": "^2.6.0",
     "gatsby": "^1.9.247",
-    "gatsby-cli": "^1.1.52",
+    "gatsby-cli": "^1.1.58",
     "gatsby-image": "^1.0.51",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-react-helmet": "^2.0.10",

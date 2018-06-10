@@ -73,7 +73,13 @@ const CivicHallLabs = ({ data }) => ( // eslint-disable-line
         </div>
       </div>
     </div>
-    <PortfolioNav color="tan" leftPath="/nyc-bigapps" leftName="NYC BigApps" />
+    <PortfolioNav
+      color="tan"
+      leftPath="/nyc-bigapps"
+      leftName="NYC BigApps"
+      rightPath="/blueprint-for-criminal-justice-reform"
+      rightName="Blueprint for Criminal Justice Reform"
+    />
   </div>
 );
 

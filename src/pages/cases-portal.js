@@ -134,7 +134,7 @@ export const query = graphql // eslint-disable-line
         ...GatsbyImageSharpSizes_tracedSVG
       }
     }
-    responsive: imageSharp(id: { regex: "/responsive/" }) {
+    responsive: imageSharp(id: { regex: "/cases-responsive-mockup-d/" }) {
       sizes(maxWidth: 1200) {
         ...GatsbyImageSharpSizes_tracedSVG
       }
