@@ -11,9 +11,9 @@ const CasesPortal = ({ data }) => ( // eslint-disable-line
       <div className="two-thirds-top" style={{ margin: `10px 0 30px 0` }}>
         <Img sizes={data.casesSpread.sizes} />
       </div>
-      <SummaryBox techs={['react', 'wordpress rest api', 'sass', 'webpack', 'sketch', 'invision']}>
-        <p>I sure did</p>
-      </SummaryBox>
+      <SummaryBox
+        techs={['react', 'wordpress rest api', 'sass', 'webpack', 'sketch', 'invision']}
+      />
     </div>
     <div className="tan-block">
       <p>

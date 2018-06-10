@@ -52,3 +52,52 @@
         margin-left: 10px;
     }
 }
+.white-block-nav, .tan-block-nav {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    a {
+        display: flex;
+        padding: 30px 25px;
+        align-items: center;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-family: TheinMed;
+        transition: color 0.3s;
+        svg {
+            width: 18px;
+            height: 18px;
+            path {
+                transition: fill 0.3s;
+                fill: $blue;
+            }
+        }
+    }
+    a:hover {
+        color: $softblack;
+        svg {
+            path {
+                fill: $softblack;
+            }
+        }
+    }
+    .left-nav {
+        svg {
+            margin-right: 15px;
+        }
+    }
+    .right-nav {
+        svg {
+            margin-left: 15px;
+        }
+    }
+}
+.white-block-nav {
+    background-color: $mywhite;
+}
+.tan-block-nav {
+    background-color: $tan;
+}

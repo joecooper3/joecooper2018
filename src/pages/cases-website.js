@@ -103,7 +103,7 @@ const CasesWebsite = ({ data }) => ( // eslint-disable-line
         </p>
       </div>
     </div>
-    <PortfolioNav />
+    <PortfolioNav color="white" rightPath="/nyc-bigapps" rightName="BigApps NYC" />
   </div>
 );
 

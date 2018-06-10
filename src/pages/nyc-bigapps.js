@@ -1,7 +1,7 @@
 import React from 'react';
-import Link from 'gatsby-link';
 import Img from 'gatsby-image';
 
+import PortfolioNav from '../components/PortfolioNav';
 import SummaryBox from '../components/SummaryBox';
 
 const NYCBigApps = ({ data }) => ( // eslint-disable-line
@@ -40,7 +40,6 @@ const NYCBigApps = ({ data }) => ( // eslint-disable-line
         <div className="two-thirds">
           <Img sizes={data.bigAppsWireframe.sizes} />
         </div>
-        {console.log(data)}
       </div>
       <div style={{ width: `700px`, margin: `50px 0 10px 0` }}>
         <Img sizes={data.bigAppsResponsive.sizes} />
@@ -60,9 +59,13 @@ const NYCBigApps = ({ data }) => ( // eslint-disable-line
         </p>
       </div>
     </div>
-    <div className="white-block">
-      <Link to="/cases-website">CASES Website</Link>
-    </div>
+    <PortfolioNav
+      color="white"
+      leftPath="/cases-website"
+      leftName="CASES Website"
+      rightPath="/civic-hall-labs"
+      rightName="Civic Hall Labs"
+    />
   </div>
 );
 

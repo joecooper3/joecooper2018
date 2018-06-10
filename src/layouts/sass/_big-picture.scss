@@ -46,6 +46,18 @@ header {
     font-size: 50px;
     letter-spacing: -2.25px;
     grid-column-start: 5;
+    svg {
+      width: 235px;
+      height: 44px;
+      path {
+        fill: $blue;
+      }
+    }
+    svg:hover {
+      path {
+      fill: $softblack;
+      }
+    }
   }
 }
 .main-body {

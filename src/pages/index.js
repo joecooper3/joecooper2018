@@ -13,11 +13,11 @@ const IndexPage = () => (
           <span className="tan-highlight highlight2 turnblue">visual designer</span>.
         </span>
       </p>
-      <p>
+      {/* <p>
         He is currently the Associate Director of Communications and Design for CASES and has
         provided freelance web and print design services to non-profit organizations across the
         city.
-      </p>
+      </p> */}
       <p className="buttons">
         <Link to="/about" className="white-btn">
           more about Joe

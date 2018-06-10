@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
+import Logo from '../components/Logo';
+
 const Header = () => (
   <header>
     <div className="container">
@@ -11,7 +13,9 @@ const Header = () => (
         <Link to="/about/">résumé</Link>
       </nav>
       <h1>
-        <Link to="/">Joe Cooper</Link>
+        <Link to="/">
+          <Logo />
+        </Link>
       </h1>
     </div>
   </header>
