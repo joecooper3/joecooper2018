@@ -9,7 +9,7 @@ const CasesPortal = ({ data }) => ( // eslint-disable-line
     <h1>CASES Portal</h1>
     <div className="flex-row">
       <div className="two-thirds-top" style={{ margin: `10px 0 30px 0` }}>
-        <Img sizes={data.casesSpread.sizes} />
+        <Img sizes={data.portalSpread.sizes} />
       </div>
       <SummaryBox
         techs={['react', 'wordpress rest api', 'sass', 'webpack', 'sketch', 'invision']}
@@ -114,7 +114,7 @@ export default CasesPortal;
 export const query = graphql // eslint-disable-line
 ` 
   query CasesPortal {
-    casesSpread: imageSharp(id: { regex: "/cases-spread@2x/" }) {
+    portalSpread: imageSharp(id: { regex: "/portal-spread/" }) {
       sizes(maxWidth: 1200) {
         ...GatsbyImageSharpSizes_tracedSVG
       }
