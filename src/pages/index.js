@@ -22,7 +22,7 @@ const IndexPage = () => (
         <Link to="/about" className="white-btn">
           more about Joe
         </Link>
-        <Link to="/about" className="blue-btn">
+        <Link to="/portfolio" className="blue-btn">
           see his portfolio
         </Link>
       </p>

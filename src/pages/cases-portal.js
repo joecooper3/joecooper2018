@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import Img from 'gatsby-image';
 
+import PortfolioNav from '../components/PortfolioNav';
 import SummaryBox from '../components/SummaryBox';
 
 const CasesPortal = ({ data }) => ( // eslint-disable-line
@@ -103,9 +104,7 @@ const CasesPortal = ({ data }) => ( // eslint-disable-line
         </p>
       </div>
     </div>
-    <div className="white-block">
-      <Link to="/nyc-bigapps">NYC Big Apps</Link>
-    </div>
+    <PortfolioNav color="white" rightPath="/cases-website" rightName="CASES Website" />
   </div>
 );
 

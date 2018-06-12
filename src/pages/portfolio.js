@@ -2,6 +2,8 @@ import React from 'react';
 import Img from 'gatsby-image';
 import Link from 'gatsby-link';
 
+import BuiltWith from '../components/BuiltWith';
+
 const Portfolio = ({ data }) => ( // eslint-disable-line
   <div className="main-body">
     <h1>Portfolio</h1>
@@ -22,7 +24,10 @@ const Portfolio = ({ data }) => ( // eslint-disable-line
           adminstrative units.
         </p>
         <div>
-          <span className="built-with">Built With:</span>
+          <span className="built-with">
+            Built With:
+            <BuiltWith techs={['react', 'wordpress rest api', 'sass']} />
+          </span>
         </div>
       </div>
     </div>
