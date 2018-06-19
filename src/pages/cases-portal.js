@@ -22,31 +22,6 @@ const CasesPortal = ({ data }) => ( // eslint-disable-line
         programs, including alternatives-to-incarceration, behavioral health, and community outreach
         services.
       </p>
-      <p>
-        I have been privileged to work full-time at CASES over the last five years and, during that
-        time, been witness to an organization experiencing significant growth. Since January 2012,
-        CASES has more than doubled its staff, added over a dozen new programs, and opened a
-        behavioral health clinic in Central Harlem.
-      </p>
-      <p>
-        Despite CASES’ rapid expansion, its website had remained largely static for several years.
-        Although many of CASES’ alternative-to-incarceration services were still well-represented on
-        the old site, newer services were relegated to the site’s margins. The site was built
-        without a CMS, so updating its content was both difficult and time-consuming.{' '}
-      </p>
-      <p>
-        In 2016, I led a visual rebranding campaign, starting with the launch of a new CASES website
-        I designed and developed.
-      </p>
-      <div style={{ width: `700px`, margin: `50px 0 10px 0` }}>
-        <Img sizes={data.screenCapture2.sizes} />
-      </div>
-      <div style={{ width: `700px`, margin: `50px 0 10px 0` }}>
-        <Img sizes={data.screenCapture1.sizes} />
-      </div>
-      <div style={{ width: `700px`, margin: `50px 0 10px 0` }}>
-        <Img sizes={data.screenCapture3.sizes} />
-      </div>
     </div>
     <div className="white-block">
       <div className="flex-row">
@@ -56,14 +31,14 @@ const CasesPortal = ({ data }) => ( // eslint-disable-line
           the first to be fully responsive.
         </p>
         <div className="two-thirds">
-          <Img sizes={data.responsive.sizes} />
+          <Img sizes={data.staffDirectory.sizes} />
         </div>
       </div>
     </div>
     <div className="tan-block">
       <div className="flex-row">
         <div className="two-thirds">
-          <Img sizes={data.refEmail.sizes} />
+          <Img sizes={data.liveSearch.sizes} />
         </div>
         <p className="one-third">
           The new referrals page allows judges, lawyers, and community members to recommend
@@ -86,14 +61,12 @@ const CasesPortal = ({ data }) => ( // eslint-disable-line
         throughout the site.
       </p>
       <div style={{ width: `700px`, margin: `50px 0 10px 0` }}>
-        <Img sizes={data.infographics.sizes} />
+        <Img sizes={data.commsCatalog.sizes} />
       </div>
     </div>
     <div className="tan-block">
       <div className="flex-row">
-        <div className="two-thirds">
-          <Img sizes={data.wordpress.sizes} />
-        </div>
+        <div className="two-thirds" />
         <p className="one-third">
           A big priority when re-designing the site was making sure that its back end was accessible
           to more of the CASES staff. By using WordPress as a CMS, CASES’ communications team is
@@ -117,37 +90,22 @@ export const query = graphql // eslint-disable-line
         ...GatsbyImageSharpSizes_tracedSVG
       }
     }
-    screenCapture1: imageSharp(id: { regex: "/cases-screen-capture-1@2x/" }) {
+    staffDirectory: imageSharp(id: { regex: "/portal-staff-directory/" }) {
       sizes(maxWidth: 1200) {
         ...GatsbyImageSharpSizes_tracedSVG
       }
     }
-    screenCapture2: imageSharp(id: { regex: "/cases-screen-capture-2@2x/" }) {
+    liveSearch: imageSharp(id: { regex: "/portal-live-search/" }) {
       sizes(maxWidth: 1200) {
         ...GatsbyImageSharpSizes_tracedSVG
       }
     }
-    screenCapture3: imageSharp(id: { regex: "/cases-screen-capture-3@2x/" }) {
+    commsCatalog: imageSharp(id: { regex: "/portal-comms-catalog/" }) {
       sizes(maxWidth: 1200) {
         ...GatsbyImageSharpSizes_tracedSVG
       }
     }
     responsive: imageSharp(id: { regex: "/cases-responsive-mockup-d/" }) {
-      sizes(maxWidth: 1200) {
-        ...GatsbyImageSharpSizes_tracedSVG
-      }
-    }
-    refEmail: imageSharp(id: { regex: "/ref-email/" }) {
-      sizes(maxWidth: 1200) {
-        ...GatsbyImageSharpSizes_tracedSVG
-      }
-    }
-    infographics: imageSharp(id: { regex: "/infographics/" }) {
-      sizes(maxWidth: 1200) {
-        ...GatsbyImageSharpSizes_tracedSVG
-      }
-    }
-    wordpress: imageSharp(id: { regex: "/wordpress/" }) {
       sizes(maxWidth: 1200) {
         ...GatsbyImageSharpSizes_tracedSVG
       }
