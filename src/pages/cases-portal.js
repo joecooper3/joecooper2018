@@ -17,35 +17,41 @@ const CasesPortal = ({ data }) => ( // eslint-disable-line
     </div>
     <div className="tan-block">
       <p>
-        The Center for Alternative Sentencing and Employment Services (CASES) is an organization
-        dedicated to increasing public health and safety through its innovative, evidence-based
-        programs, including alternatives-to-incarceration, behavioral health, and community outreach
-        services.
+        The CASES Portal is an internal operations application, featuring a robust staff directory
+        with live search, communications catalog, and custom-built pages for the organization’s
+        adminstrative units.
       </p>
     </div>
     <div className="white-block">
       <div className="flex-row">
-        <p className="one-third">
-          Prior to the re-design, CASES’ site was only optimized for desktop viewing; trying to view
-          the site from a mobile device was nearly impossible. The new iteration of CASES’ site was
-          the first to be fully responsive.
-        </p>
         <div className="two-thirds">
           <Img sizes={data.staffDirectory.sizes} />
+        </div>
+        <div className="one-third">
+          <p>
+            Over the last several years, CASES has more than doubled in size and expanded to
+            multiple offices. To help staff keep track of all the people working there, the portal
+            features a comprehensive staff directory divided both by department and individual
+            teams.
+          </p>
+
+          <p>
+            The directory receives a staff member's name, position, contact information, and
+            supervisor from a JSON file generated from CASES‘ payroll and Outlook databases, while
+            the photos are uploaded directly into Wordpress's backend.
+          </p>
         </div>
       </div>
     </div>
     <div className="tan-block">
       <div className="flex-row">
+        <p className="one-third">
+          The portal leverages React to create a live search that allows users to quickly view
+          results as they type.
+        </p>
         <div className="two-thirds">
           <Img sizes={data.liveSearch.sizes} />
         </div>
-        <p className="one-third">
-          The new referrals page allows judges, lawyers, and community members to recommend
-          individuals directly to an appropriate staff member’s email. Previously, interested
-          parties either needed to directly email a general information account or call a direct
-          contact within the organization.
-        </p>
       </div>
     </div>
     <div className="white-block">
