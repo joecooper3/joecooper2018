@@ -15,6 +15,7 @@ const ContactPage = ({ data }) => ( //eslint-disable-line
       method="POST"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
+      autoComplete="off"
     >
       <p className="hidden">
         <label htmlFor="bot-field">
@@ -22,18 +23,18 @@ const ContactPage = ({ data }) => ( //eslint-disable-line
         </label>
       </p>
       <label htmlFor="form-name">
-        Name
+        <span>Name</span>
         <input id="form-name" type="text" name="name" placeholder="Name" />
       </label>
       <label htmlFor="form-email">
-        Email
+        <span>Email</span>
         <input id="form-email" type="email" name="_replyto" placeholder="Email" />
       </label>
       <label htmlFor="form-body">
-        Message
+        <span>Message</span>
         <textarea name="form-body" placeholder="Enter your message" />
       </label>
-      <input type="submit" value="Send" />
+      <button type="submit" value="COME ON" />
     </form>
   </div>
 );

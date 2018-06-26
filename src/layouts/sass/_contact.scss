@@ -5,11 +5,46 @@
 #contact-form {
     display: flex;
     flex-flow: column nowrap;
+    width: 100%;
+    max-width: 300px;
+    margin: 30px 0;
     .hidden {
         display: none;
     }
     label {
         display: flex;
         flex-flow: column nowrap;
+        font-family: TheinBold;
+        text-transform: uppercase;
+        color: $blue;
+        font-size: 14px;
+        input, textarea {
+            text-transform: none;
+            font-family: TheinReg;
+            padding: 10px;
+            margin: 0 0 15px 0;
+            font-size: 18px;
+            background-color: $mywhite;
+            border: 1.0px solid $mywhite;
+            z-index: 2;
+        }
+        input:focus, textarea:focus {
+            border: 1.0px solid $blue;
+            outline: 0;
+        }
+        input:focus::placeholder, textarea:focus::placeholder {
+            opacity: 0;
+        }
+        span {
+            transform: translate(20px, 100%) scale(1.1,1.1);
+            transition: transform 0.2s ease-in, opacity 0.25s ease-in;
+            opacity: 0;
+        }
+    }
+    label:focus-within {
+        span {
+            transform: translate(0, 0) scale(1,1);
+            opacity: 1;
+        }
     }
 }
