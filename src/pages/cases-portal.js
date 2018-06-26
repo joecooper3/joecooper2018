@@ -21,6 +21,16 @@ const CasesPortal = ({ data }) => ( // eslint-disable-line
         with live search, communications catalog, and custom-built pages for the organization’s
         adminstrative units.
       </p>
+      <p>
+        The portal was developed in response to staff concerns about internal communications. Over
+        the last several years, CASES has more than doubled in size and expanded to multiple
+        offices.
+      </p>
+      <p>
+        I did everything on the portal. I designed it, I created workable prototypes on InVision, I
+        tested it, I coded it, I developed all the visual assets, I managed the whole freakin'
+        project.
+      </p>
     </div>
     <div className="white-block">
       <div className="flex-row">
@@ -37,7 +47,7 @@ const CasesPortal = ({ data }) => ( // eslint-disable-line
 
           <p>
             The directory receives a staff member's name, position, contact information, and
-            supervisor from a JSON file generated from CASES‘ payroll and Outlook databases, while
+            supervisor from a JSON file generated from CASES’ payroll and Outlook databases, while
             the photos are uploaded directly into Wordpress's backend.
           </p>
         </div>

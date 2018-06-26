@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 import './index.scss';
 
 const Layout = ({ children }) => (
-  <div>
+  <div className="master-man">
     <Helmet
       title="Joe Cooper"
       meta={[

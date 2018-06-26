@@ -1,0 +1,15 @@
+.reverse {
+    direction: rtl;
+    unicode-bidi: bidi-override; 
+}
+#contact-form {
+    display: flex;
+    flex-flow: column nowrap;
+    .hidden {
+        display: none;
+    }
+    label {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+}
