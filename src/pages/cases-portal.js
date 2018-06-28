@@ -1,5 +1,6 @@
 import React from 'react';
 import Img from 'gatsby-image';
+import Link from 'gatsby-link';
 
 import PortfolioNav from '../components/PortfolioNav';
 import SummaryBox from '../components/SummaryBox';
@@ -24,12 +25,14 @@ const CasesPortal = ({ data }) => ( // eslint-disable-line
       <p>
         The portal was developed in response to staff concerns about internal communications. Over
         the last several years, CASES has more than doubled in size and expanded to multiple
-        offices.
+        offices, making collaboration across units increasingly challenging. The portal aimed to
+        alleviate these challenges by providing an online repository for various agency-related
+        resources.
       </p>
       <p>
-        I did everything on the portal. I designed it, I created workable prototypes on InVision, I
-        tested it, I coded it, I developed all the visual assets, I managed the whole freakin'
-        project.
+        I was responsible for all the wireframing, prototyping, designing, and development of the
+        portal. Its back end is based on a custom Wordpress REST API configuration and its front end
+        is powered by React.
       </p>
     </div>
     <div className="white-block">
@@ -39,16 +42,9 @@ const CasesPortal = ({ data }) => ( // eslint-disable-line
         </div>
         <div className="one-third">
           <p>
-            Over the last several years, CASES has more than doubled in size and expanded to
-            multiple offices. To help staff keep track of all the people working there, the portal
-            features a comprehensive staff directory divided both by department and individual
-            teams.
-          </p>
-
-          <p>
             The directory receives a staff member's name, position, contact information, and
             supervisor from a JSON file generated from CASES’ payroll and Outlook databases, while
-            the photos are uploaded directly into Wordpress's backend.
+            the photos are uploaded directly into Wordpress's back end via its admin panel.
           </p>
         </div>
       </div>
@@ -57,7 +53,7 @@ const CasesPortal = ({ data }) => ( // eslint-disable-line
       <div className="flex-row">
         <p className="one-third">
           The portal leverages React to create a live search that allows users to quickly view
-          results as they type.
+          results as they type. Users can easily search by first name, last name, or department.
         </p>
         <div className="two-thirds">
           <Img sizes={data.liveSearch.sizes} />
@@ -65,31 +61,30 @@ const CasesPortal = ({ data }) => ( // eslint-disable-line
       </div>
     </div>
     <div className="white-block">
-      <p>
-        Many challenges encountered by those involved in New York City’s criminal justice system
-        aren’t well known among the general public. If a first-time visitor were to stumble upon
-        CASES’ website, they might not have the information framework to understand why CASES’
-        services are so vital to the people they serve. As such, we needed a way to quickly and
-        compellingly communicate relevant information to visitors.
-      </p>
-      <p>
-        We determined the best way to address this concern was to sprinkle small infographics
-        throughout the site.
-      </p>
-      <div style={{ width: `700px`, margin: `50px 0 10px 0` }}>
-        <Img sizes={data.commsCatalog.sizes} />
+      <div className="flex-row">
+        <div className="two-thirds">
+          <Img sizes={data.deptPages.sizes} />
+        </div>
+        <p className="one-third">
+          Most of CASES’ admin units have a custom-crafted department page where supervisors can
+          share relevant updates and documentation. These pages can be edited using a modified
+          version of Wordpress's native admin interface, allowing even staff members with limited
+          technological know-how to easily maintain their department's page.
+        </p>
       </div>
     </div>
     <div className="tan-block">
-      <div className="flex-row">
-        <div className="two-thirds" />
-        <p className="one-third">
-          A big priority when re-designing the site was making sure that its back end was accessible
-          to more of the CASES staff. By using WordPress as a CMS, CASES’ communications team is
-          able to easily add new content to the site without any HTML knowledge. Additionally, I
-          built custom modules into CASES’ WordPress theme, allowing staff to make changes to copy
-          without potentially compromising the rest of the site’s layout.
-        </p>
+      <p>
+        For my unit's part, we wanted a page that would allow CASES staff to easily view our library
+        of communications materials. The catalog is separated into different categories, including
+        one-pagers, brochures, flyers, and miscellaneous.
+      </p>
+      <p>
+        (Incidentally, you can also <Link to="/cases-misc-design">see a sampling</Link> of some of
+        the visual design work I did on CASES’ print materials.)
+      </p>
+      <div style={{ width: `700px`, margin: `50px 0 10px 0` }}>
+        <Img sizes={data.commsCatalog.sizes} />
       </div>
     </div>
     <PortfolioNav color="white" rightPath="/cases-website" rightName="CASES Website" />
@@ -121,7 +116,7 @@ export const query = graphql // eslint-disable-line
         ...GatsbyImageSharpSizes_tracedSVG
       }
     }
-    responsive: imageSharp(id: { regex: "/cases-responsive-mockup-d/" }) {
+    deptPages: imageSharp(id: { regex: "/portal-department/" }) {
       sizes(maxWidth: 1200) {
         ...GatsbyImageSharpSizes_tracedSVG
       }

@@ -3,14 +3,16 @@ import Link from 'gatsby-link';
 
 import Logo from '../components/Logo';
 
-const Header = () => (
+const Header = () => ( // eslint-disable-line
   <header>
     <div className="container">
       <nav>
         <Link to="/about/">about</Link>
         <Link to="/portfolio/">portfolio</Link>
         <Link to="/contact/">contact</Link>
-        <Link to="/about/">résumé</Link>
+        <a href="resume.pdf" target="_blank">
+          résumé
+        </a>
       </nav>
       <h1>
         <Link to="/">

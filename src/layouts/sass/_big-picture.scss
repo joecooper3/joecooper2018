@@ -74,6 +74,7 @@ header {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  justify-content: center;
   height: 100%;
   h1 {
     width: 100%;
@@ -111,37 +112,46 @@ header {
 .buttons {
   display: flex;
   justify-content: center;
-  font-size: 1.25rem;
   margin-top: 50px;
   a {
     margin: 0 10px;
     text-decoration: none;
-    padding: 20px 33px;
-    font-family: TheinMed;
   }
-  .blue-btn {
-    background-color: $blue;
-    color: $mywhite;
-    border: 1.0px solid $softblack;
-    box-shadow: 5px 5px $softblack;
-    transition: 0.25s all ease-in;
-  }
-  .blue-btn:hover {
-    background-color: $blue20;
-    box-shadow: 7px 7px $softblack;
-  }
-  .white-btn {
-    background-color: $mywhite;
-    color: $blue;
-    border: 1.0px solid $blue;
-    box-shadow: 5px 5px $blue;
-    transition: 0.25s all;
-  }
-  .white-btn:hover {
-    color: $blue10;
-    border-color: $blue20;
-    box-shadow: 7px 7px $blue20;
-  }
+}
+.blue-btn, .white-btn {
+  font-size: 1.25rem;
+  padding: 20px 33px;
+  font-family: TheinMed;
+  cursor: pointer;
+}
+.blue-btn {
+  background-color: $blue;
+  color: $mywhite;
+  border: 1.0px solid $softblack;
+  box-shadow: 5px 5px $softblack;
+  transition: 0.25s all ease-in;
+}
+a.blue-btn:visited {
+  color: $mywhite;
+} 
+a.blue-btn:hover {
+  color: $mywhite;
+}
+.blue-btn:hover {
+  background-color: $blue20;
+  box-shadow: 7px 7px $softblack;
+}
+.white-btn {
+  background-color: $mywhite;
+  color: $blue;
+  border: 1.0px solid $blue;
+  box-shadow: 5px 5px $blue;
+  transition: 0.25s all;
+}
+.white-btn:hover {
+  color: $blue10;
+  border-color: $blue20;
+  box-shadow: 7px 7px $blue20;
 }
 
 footer {

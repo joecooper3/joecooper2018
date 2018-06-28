@@ -34,7 +34,11 @@ const ContactPage = ({ data }) => ( //eslint-disable-line
         <span>Message</span>
         <textarea name="form-body" placeholder="Enter your message" />
       </label>
-      <button type="submit" value="COME ON" />
+      <p className="buttons">
+        <button type="submit" className="blue-btn">
+          Submit
+        </button>
+      </p>
     </form>
   </div>
 );

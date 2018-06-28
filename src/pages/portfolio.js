@@ -100,14 +100,14 @@ const Portfolio = ({ data }) => ( // eslint-disable-line
         </span>
       </div>
       <div className="portfolio-grid-item">
-        <Link to="/cases-website" className="lil-title">
-          <h2>CASES Brochures/Flyers</h2>
+        <Link to="/cases-misc-design" className="lil-title">
+          <h2>Miscellaneous CASES Designs</h2>
         </Link>
-        <Link to="/civic-hall-labs" className="lil-image">
-          <img src={brochures} alt="CASES Brochures and Flyers" />
+        <Link to="/cases-misc-design" className="lil-image">
+          <img src={brochures} alt="Miscellaneous CASES Designs" />
         </Link>
         <span className="lil-built-with">
-          <BuiltWith techs={['indesign', 'illustrator', 'photoshop']} />
+          <BuiltWith techs={['indesign', 'illustrator', 'photoshop', 'css']} />
         </span>
       </div>
     </div>

@@ -38,6 +38,8 @@ const ATIReentry = ({ data }) => ( // eslint-disable-line
       color="white"
       leftPath="/blueprint-for-criminal-justice-reform"
       leftName="Blueprint for Criminal Justice Reform"
+      rightPath="/cases-misc-design"
+      rightName="Miscellaneous CASES Designs"
     />
   </div>
 );
