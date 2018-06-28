@@ -6,7 +6,7 @@ import Header from '../components/header';
 import Footer from '../components/Footer';
 import './index.scss';
 
-const Layout = ({ children }) => (
+const Layout = ({ children, data }) => ( // eslint-disable-line
   <div className="master-man">
     <Helmet
       title="Joe Cooper"
@@ -22,7 +22,7 @@ const Layout = ({ children }) => (
         }
       ]}
     />
-    <Header siteTitle="Joe Cooper" />
+    <Header siteTitle="Joe Cooper" resumeLink={data.resumeLink.publicURL} />
     <div>{children()}</div>
     <Footer />
   </div>
@@ -33,3 +33,12 @@ Layout.propTypes = {
 };
 
 export default Layout;
+
+export const query = graphql // eslint-disable-line
+`
+  query Resume {
+    resumeLink: file(extension: { eq: "pdf" }) {
+      publicURL
+    }
+  }
+`;
