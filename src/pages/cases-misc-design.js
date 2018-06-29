@@ -24,32 +24,32 @@ const CasesMiscDesign = ({ data }) => ( // eslint-disable-line
       <SummaryBox techs={['indesign', 'illustrator', 'photoshop', 'css']} />
     </div>
     <div className="tan-block">
-      <div style={{ width: `700px`, margin: `50px 0 10px 0` }}>
+      <div className="single-image">
         <Img sizes={data.bulletinBoard.sizes} />
       </div>
-      <div style={{ width: `700px`, margin: `50px 0 10px 0` }}>
+      <div className="single-image">
         <Img sizes={data.onShelf.sizes} />
       </div>
     </div>
     <div className="white-block">
-      <div style={{ width: `700px`, margin: `50px 0 10px 0` }}>
+      <div className="single-image">
         <Img sizes={data.clinicBrochure.sizes} />
       </div>
-      <div style={{ width: `700px`, margin: `50px 0 10px 0` }}>
+      <div className="single-image">
         <Img sizes={data.nathBrochure.sizes} />
       </div>
-      <div style={{ width: `700px`, margin: `50px 0 10px 0` }}>
+      <div className="single-image">
         <Img sizes={data.aptBrochure.sizes} />
       </div>
-      <div style={{ width: `700px`, margin: `50px 0 10px 0` }}>
+      <div className="single-image">
         <Img sizes={data.mactBrochure.sizes} />
       </div>
     </div>
     <div className="tan-block">
-      <div style={{ width: `700px`, margin: `50px 0 10px 0` }}>
+      <div className="single-image">
         <Img sizes={data.bronxBrochure.sizes} />
       </div>
-      <div style={{ width: `700px`, margin: `50px 0 10px 0` }}>
+      <div className="single-image">
         <Img sizes={data.manhattanBrochure.sizes} />
       </div>
     </div>

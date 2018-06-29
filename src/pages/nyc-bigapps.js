@@ -41,7 +41,7 @@ const NYCBigApps = ({ data }) => ( // eslint-disable-line
           <Img sizes={data.bigAppsWireframe.sizes} />
         </div>
       </div>
-      <div style={{ width: `700px`, margin: `50px 0 10px 0` }}>
+      <div className="single-image">
         <Img sizes={data.bigAppsResponsive.sizes} />
       </div>
     </div>

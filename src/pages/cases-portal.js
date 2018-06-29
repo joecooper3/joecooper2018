@@ -83,7 +83,7 @@ const CasesPortal = ({ data }) => ( // eslint-disable-line
         (Incidentally, you can also <Link to="/cases-misc-design">see a sampling</Link> of some of
         the visual design work I did on CASES’ print materials.)
       </p>
-      <div style={{ width: `700px`, margin: `50px 0 10px 0` }}>
+      <div className="single-image">
         <Img sizes={data.commsCatalog.sizes} />
       </div>
     </div>

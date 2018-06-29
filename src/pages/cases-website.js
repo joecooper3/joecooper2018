@@ -8,7 +8,7 @@ const CasesWebsite = ({ data }) => ( // eslint-disable-line
   <div className="main-body">
     <h1>CASES Website</h1>
     <div className="flex-row">
-      <div className="two-thirds-top" style={{ margin: `10px 0 30px 0` }}>
+      <div className="two-thirds-top">
         <Img sizes={data.casesSpread.sizes} />
       </div>
       <SummaryBox techs={['wordpress', 'sass', 'jquery', 'grunt', 'illustrator', 'indesign']}>
@@ -85,7 +85,7 @@ const CasesWebsite = ({ data }) => ( // eslint-disable-line
         We determined the best way to address this concern was to sprinkle small infographics
         throughout the site.
       </p>
-      <div style={{ width: `700px`, margin: `50px 0 10px 0` }}>
+      <div className="single-image">
         <Img sizes={data.infographics.sizes} />
       </div>
     </div>

@@ -28,6 +28,8 @@ p {
   grid-template-rows: 124px 1fr 48px;
 }
 header {
+  display: flex;
+  align-items: center;
   a {
     text-decoration: none;
     transition: 0.3s color;
@@ -37,12 +39,14 @@ header {
   }
   .container {
     display: grid;
+    width: 100%;
     max-width: 1000px;
-    grid-template-columns: 12fr;
+    grid-template-columns: 374px 235px;
+    justify-content: space-between;
     margin: 0 auto;
     padding: 0 50px;
+    align-items: center;
     nav {
-      align-self: center;
       a {
         font-size: 1.2em;
         margin-right: 30px;
@@ -54,7 +58,7 @@ header {
   h1 {
     font-size: 50px;
     letter-spacing: -2.25px;
-    grid-column-start: 5;
+    margin: 0;
     svg {
       width: 235px;
       height: 44px;
@@ -105,8 +109,10 @@ header {
   background-color: $tan;
 }
 .single-image {
-  width: 750px;
-  margin: 30px 0 10px 0;
+  width: 100%;
+  max-width: 750px;
+  margin: 50px 0 10px 0;
+  box-sizing: border-box;
 }
 
 .buttons {
@@ -160,3 +166,16 @@ footer {
   text-align: center;
   padding: 15px 0;
 }
+@media (max-width: 740px) { 
+  header {
+    .container {
+      padding: 0 25px;
+      grid-template-columns: 374px 150px;
+    }
+    h1 {
+      svg {
+        width: 150px;
+      }
+    }
+  }
+ }
