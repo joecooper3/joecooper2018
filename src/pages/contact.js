@@ -11,7 +11,7 @@ const ContactPage = ({ data }) => ( //eslint-disable-line
     </p>
     <form
       id="contact-form"
-      name="contact"
+      name="contact-me"
       method="POST"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
