@@ -25,7 +25,7 @@ p {
 .master-man {
   min-height: 100vh;
   display: grid;
-  grid-template-rows: 124px 1fr 48px;
+  grid-template-rows: minmax(124px, auto) 1fr 48px;
 }
 header {
   display: flex;
@@ -46,13 +46,19 @@ header {
     margin: 0 auto;
     padding: 0 50px;
     align-items: center;
-    nav {
+    nav#desktop {
       a {
         font-size: 1.2em;
         margin-right: 30px;
         font-family: TheinLight;
         letter-spacing: 1px;
       }
+    }
+    #burger {
+      display: none;
+    }
+    nav#mobile {
+      display: none;
     }
   }
   h1 {
@@ -73,7 +79,36 @@ header {
     }
   }
 }
-.main-body {
+.slide-appear {
+  opacity    : 0;
+  transition : opacity .7s ease-in;
+}
+
+.slide-appear.slide-appear-active {
+  opacity : 1;
+}
+
+.slide-enter {
+  max-height : 0;
+  opacity: 0;
+  transition : max-height .2s ease-in, opacity .2s ease-in;
+}
+
+.slide-enter.slide-enter-active {
+  opacity: 1;
+  max-height : 1000px;
+}
+
+.slide-leave {
+  max-height : 1000px;
+  transition : max-height .2s ease-out, opacity .2s ease-out;
+}
+
+.slide-leave.slide-leave-active {
+  max-height : 0;
+  opacity: 0;
+}
+.main-body, .main-body-portfolio {
   background-color: $tan;
   display: flex;
   flex-flow: column nowrap;
@@ -91,6 +126,9 @@ header {
     width: 100%;
     max-width: 700px;
   }
+}
+.main-body {
+  padding: 0 20px 40px 20px;
 }
 .white-block,
 .tan-block {
@@ -114,13 +152,11 @@ header {
   margin: 50px 0 10px 0;
   box-sizing: border-box;
 }
-
-.buttons {
+.button-container {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin: 40px 0 20px 0;
   a {
-    margin: 0 10px;
     text-decoration: none;
   }
 }
@@ -179,3 +215,55 @@ footer {
     }
   }
  }
+@media (max-width: 570px) {
+  header {
+    padding-top: 37px;
+    align-items: start;
+    .container {
+      grid-template-columns: 150px 24px;
+      nav#desktop {
+        display: none;
+      }
+      h1 {
+        height: 50px;
+      }
+      #burger {
+        display: grid;
+        align-items: center;
+        height: 50px;
+        transition: transform 0.23s;
+        svg {
+          fill: $blue;
+        }
+      }
+      .turnt-false {
+        transform: rotate(0deg);
+      }
+      .turnt-true {
+        transform: rotate(90deg);
+      }
+      span {
+        grid-column: span 2;
+      }
+      nav#mobile {
+        display: grid;
+        margin: 20px 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 50px);
+        text-align: right;
+        font-size: 22px;
+        background-color: $blue;
+        grid-gap: 1px;
+        a {
+          background-color: $mywhite;
+          display: grid;
+          align-items: center;
+          padding-right: 5px;
+        }
+        a:hover {
+          color: $blue20;
+        }
+      }
+    }
+  }
+}

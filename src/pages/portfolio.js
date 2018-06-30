@@ -36,11 +36,11 @@ const Portfolio = ({ data }) => ( // eslint-disable-line
             <BuiltWith techs={['react', 'wordpress rest api', 'sass']} />
           </span>
         </div>
-        <div className="buttons">
+        <p className="button-container">
           <Link to="/cases-portal" className="white-btn">
             Read More
           </Link>
-        </div>
+        </p>
       </div>
     </div>
     <div className="portfolio-grid">

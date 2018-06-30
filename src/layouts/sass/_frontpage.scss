@@ -3,7 +3,7 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    padding: 50px 0 50px 0;
+    padding: 50px 25px;
     background-color: $tan;
     p {
       width: 100%;
@@ -51,6 +51,18 @@
   @keyframes color-shift {
     0%   {color: $softblack}
     100% {color: $blue}
+  }
+
+  .frontpage-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    flex-flow: row wrap;
+    a {
+      width: 150px;
+      margin: 14px;
+      text-decoration: none;
+    }
   }
 
   .social-media {

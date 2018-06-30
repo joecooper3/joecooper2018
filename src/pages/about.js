@@ -5,14 +5,13 @@ import Img from 'gatsby-image';
 const AboutPage = ({ data }) => ( //eslint-disable-line
   <div className="main-body">
     <h1>About Joe Cooper</h1>
-    <div style={{ width: `800px`, margin: `10px 0 30px 0` }}>
+    <div style={{ width: `100%`, maxWidth: `800px`, margin: `10px 0 30px 0` }}>
       <Img sizes={data.itMeToo.sizes} />
     </div>
     <p>
       I’m a front-end developer and graphic designer based in New York City. For the past six years,
       I’ve worked full-time at CASES where I currently serve as its Associate Director of
-      Communications and Design. (You can see a sampling of my web work with them here and print
-      work here.)
+      Communications and Design.
     </p>
 
     <p>
@@ -29,7 +28,11 @@ const AboutPage = ({ data }) => ( //eslint-disable-line
       In addition to anything design, I also enjoy experimental music, retro gaming, and futilely
       rooting for the Buffalo Bills.
     </p>
-    <Link to="/">Go back to the homepage</Link>
+    <p className="button-container">
+      <Link to="/portfolio" className="blue-btn">
+        See my portfolio
+      </Link>
+    </p>
   </div>
 );
 

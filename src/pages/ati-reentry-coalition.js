@@ -5,7 +5,7 @@ import PortfolioNav from '../components/PortfolioNav';
 import SummaryBox from '../components/SummaryBox';
 
 const ATIReentry = ({ data }) => ( // eslint-disable-line
-  <div className="main-body">
+  <div className="main-body-portfolio">
     <h1>ATI/Reentry Coalition</h1>
     <div className="flex-row">
       <div className="two-thirds-top" style={{ margin: `10px 0 30px 0` }}>

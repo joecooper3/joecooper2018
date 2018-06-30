@@ -10,7 +10,7 @@ const IndexPage = () => (
         Joe Cooper is a New York City-based<br />
         <span className="second-line">
           <span className="tan-highlight turnblue">front-end developer</span> and{' '}
-          <span className="tan-highlight highlight2 turnblue">visual designer</span>.
+          <span className="tan-highlight highlight2 turnblue">visual designer.</span>
         </span>
       </p>
       {/* <p>
@@ -18,7 +18,7 @@ const IndexPage = () => (
         provided freelance web and print design services to non-profit organizations across the
         city.
       </p> */}
-      <p className="buttons">
+      <p className="frontpage-buttons">
         <Link to="/about" className="white-btn">
           more about Joe
         </Link>

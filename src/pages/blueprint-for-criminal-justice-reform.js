@@ -5,7 +5,7 @@ import PortfolioNav from '../components/PortfolioNav';
 import SummaryBox from '../components/SummaryBox';
 
 const Blueprint = ({ data }) => ( // eslint-disable-line
-  <div className="main-body">
+  <div className="main-body-portfolio">
     <h1>Blueprint for Criminal Justice Reform</h1>
     <div className="flex-row">
       <div

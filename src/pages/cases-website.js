@@ -5,7 +5,7 @@ import PortfolioNav from '../components/PortfolioNav';
 import SummaryBox from '../components/SummaryBox';
 
 const CasesWebsite = ({ data }) => ( // eslint-disable-line
-  <div className="main-body">
+  <div className="main-body-portfolio">
     <h1>CASES Website</h1>
     <div className="flex-row">
       <div className="two-thirds-top">
