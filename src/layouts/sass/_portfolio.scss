@@ -36,37 +36,51 @@
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 20px;
-    margin: 40px 0 80px 0;
-    max-width: 1100px;
-}
-
-.portfolio-grid-item {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    grid-column-gap: 18px;
     align-items: center;
-    margin: 30px 0;
+    justify-items: center;
+    margin: 10px 0 60px 0;
+    width: 100%;
+    max-width: 1000px;
     .lil-title {
-        flex: 100%;
-        text-align: center;
-        text-decoration: none;
-        font-size: 18px;
-        font-family: TheinBold;
+        max-width: 300px;
+        margin-top: 50px;
     }
     .lil-image {
+        flex: 1 1 100px;
+        width: 100%;
+        max-width: 150px;
         img {
         width: 100%;
         }
     }
-    .lil-built-with {
-        text-transform: uppercase;
-        font-size: 12px;
-        margin: 0;
-        padding-left: 10px;
-        font-family: TheinBold;
-    }
+  a {
+      text-decoration: none;
+      font-family: TheinBold;
+  }
+  a {
+      text-align: center;
+  }
+  .image-and-bw {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      align-self: start;
+      width: 100%;
+  }
+}
+
+.lil-built-with {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 0;
+    padding-left: 15px;
+    font-family: TheinBold;
+    width: 100%;
+    max-width: 150px;
+    flex: 1 2 100px;
 }
 
 .flex-row {
@@ -102,7 +116,8 @@
     margin: 10px 30px;
     width: 100%;
     max-width: 275px;
-    padding: 20px;
+    padding: 20px 40px;
+    box-sizing: border-box;
     h2 {
         margin-top: 0;
         font-family: TheinBold;
@@ -175,5 +190,44 @@
 @media (max-width: 570px) {
     h2  {
         font-size: 1.2rem;
+    }
+    .portfolio-grid {
+        grid-template-columns: repeat(2, minmax(150px, 1fr))
+    }
+    .lil-title-1 {
+        order: 1;
+    }
+    .lil-title-2 {
+        order: 2
+    }
+    .iab-1 {
+        order: 3;
+    }
+    .iab-2 {
+        order: 4;
+    }
+    .lil-title-3 {
+        order: 5;
+    }
+    .lil-title-4 {
+        order: 6
+    }
+    .iab-3 {
+        order: 7;
+    }
+    .iab-4 {
+        order: 8;
+    }
+    .lil-title-5 {
+        order: 9;
+    }
+    .lil-title-6 {
+        order: 10
+    }
+    .iab-5 {
+        order: 11;
+    }
+    .iab-6 {
+        order: 12;
     }
 }

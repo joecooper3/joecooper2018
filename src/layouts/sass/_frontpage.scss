@@ -58,6 +58,7 @@
     justify-content: center;
     margin-top: 40px;
     flex-flow: row wrap;
+    text-align: center;
     a {
       width: 150px;
       margin: 14px;
@@ -75,5 +76,18 @@
     }
     svg:hover {
       fill: $blue;
+    }
+  }
+  @media (max-width: 350px) {
+    .intro-block {
+      font-size: 1.25rem;
+      padding: 30px 15px;
+    }
+    .frontpage-buttons {
+      margin-top: 25px;
+      a {
+      font-size: 1.1rem;
+      width: 135px;
+      }
     }
   }

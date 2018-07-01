@@ -17,6 +17,11 @@ class Header extends Component {
       this.setState({ mobile: !this.state.mobile });
     }
   };
+  justClose = () => {
+    if (this.state.mobile) {
+      this.setState({ mobile: false });
+    }
+  };
   render() {
     return (
       <header>
@@ -30,7 +35,7 @@ class Header extends Component {
             </a>
           </nav>
           <h1>
-            <Link to="/">
+            <Link to="/" onClick={this.justClose} onKeyDown={this.justClose}>
               <Logo />
             </Link>
           </h1>
@@ -55,11 +60,15 @@ class Header extends Component {
           >
             {this.state.mobile && (
               <nav id="mobile">
-                <Link to="/about/" tabIndex={0}>
+                <Link to="/about/" tabIndex={0} onClick={this.justClose}>
                   about
                 </Link>
-                <Link to="/portfolio/">portfolio</Link>
-                <Link to="/contact/">contact</Link>
+                <Link to="/portfolio/" onClick={this.justClose}>
+                  portfolio
+                </Link>
+                <Link to="/contact/" onClick={this.justClose}>
+                  contact
+                </Link>
                 <a href={this.props.resumeLink} target="_blank">
                   résumé
                 </a>

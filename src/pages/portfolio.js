@@ -44,10 +44,16 @@ const Portfolio = ({ data }) => ( // eslint-disable-line
       </div>
     </div>
     <div className="portfolio-grid">
-      <div className="portfolio-grid-item">
-        <Link to="/cases-website" className="lil-title">
-          <h2>CASES Website</h2>
-        </Link>
+      <Link to="/cases-website" className="lil-title lil-title-1">
+        <h2>CASES Website</h2>
+      </Link>
+      <Link to="/nyc-bigapps" className="lil-title lil-title-2">
+        <h2>NYC BigApps</h2>
+      </Link>
+      <Link to="/civic-hall-labs" className="lil-title lil-title-3">
+        <h2>Civic Hall Labs</h2>
+      </Link>
+      <div className="image-and-bw iab-1">
         <Link to="/cases-website" className="lil-image">
           <img src={cases} alt="CASES Logo" />
         </Link>
@@ -55,10 +61,7 @@ const Portfolio = ({ data }) => ( // eslint-disable-line
           <BuiltWith techs={['wordpress', 'sass', 'jquery']} />
         </span>
       </div>
-      <div className="portfolio-grid-item">
-        <Link to="/nyc-bigapps" className="lil-title">
-          <h2>NYC BigApps</h2>
-        </Link>
+      <div className="image-and-bw iab-2">
         <Link to="/nyc-bigapps" className="lil-image">
           <img src={bigapps} alt="NYC BigApps" />
         </Link>
@@ -66,10 +69,7 @@ const Portfolio = ({ data }) => ( // eslint-disable-line
           <BuiltWith techs={['wordpress', 'sass', 'jquery']} />
         </span>
       </div>
-      <div className="portfolio-grid-item">
-        <Link to="/civic-hall-labs" className="lil-title">
-          <h2>Civic Hall Labs</h2>
-        </Link>
+      <div className="image-and-bw iab-3">
         <Link to="/civic-hall-labs" className="lil-image">
           <img src={chl} alt="Civic Hall Labs" />
         </Link>
@@ -77,10 +77,16 @@ const Portfolio = ({ data }) => ( // eslint-disable-line
           <BuiltWith techs={['css', 'javascript', 'illustrator']} />
         </span>
       </div>
-      <div className="portfolio-grid-item">
-        <Link to="/blueprint-for-criminal-justice-reform" className="lil-title">
-          <h2>Blueprint for Criminal Justice Reform</h2>
-        </Link>
+      <Link to="/blueprint-for-criminal-justice-reform" className="lil-title lil-title-4">
+        <h2>Blueprint for Criminal Justice Reform</h2>
+      </Link>
+      <Link to="/ati-reentry-coalition" className="lil-title lil-title-5">
+        <h2>ATI/Reentry Coalition</h2>
+      </Link>
+      <Link to="/cases-misc-design" className="lil-title lil-title-6">
+        <h2>Miscellaneous CASES Designs</h2>
+      </Link>
+      <div className="image-and-bw iab-4">
         <Link to="/blueprint-for-criminal-justice-reform" className="lil-image">
           <img src={blueprint} alt="Blueprint for Criminal Justice Reform" />
         </Link>
@@ -88,10 +94,7 @@ const Portfolio = ({ data }) => ( // eslint-disable-line
           <BuiltWith techs={['indesign', 'illustrator']} />
         </span>
       </div>
-      <div className="portfolio-grid-item">
-        <Link to="/ati-reentry-coalition" className="lil-title">
-          <h2>ATI/Reentry Coalition</h2>
-        </Link>
+      <div className="image-and-bw iab-5">
         <Link to="/ati-reentry-coalition" className="lil-image">
           <img src={atireentry} alt="ATI/Reentry Coalition" />
         </Link>
@@ -99,15 +102,12 @@ const Portfolio = ({ data }) => ( // eslint-disable-line
           <BuiltWith techs={['indesign', 'illustrator']} />
         </span>
       </div>
-      <div className="portfolio-grid-item">
-        <Link to="/cases-misc-design" className="lil-title">
-          <h2>Miscellaneous CASES Designs</h2>
-        </Link>
+      <div className="image-and-bw iab-6">
         <Link to="/cases-misc-design" className="lil-image">
           <img src={brochures} alt="Miscellaneous CASES Designs" />
         </Link>
         <span className="lil-built-with">
-          <BuiltWith techs={['indesign', 'illustrator', 'photoshop', 'css']} />
+          <BuiltWith techs={['indesign', 'illustrator', 'photoshop']} />
         </span>
       </div>
     </div>
