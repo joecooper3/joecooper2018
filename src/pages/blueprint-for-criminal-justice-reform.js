@@ -8,10 +8,7 @@ const Blueprint = ({ data }) => ( // eslint-disable-line
   <div className="main-body-portfolio">
     <h1>Blueprint for Criminal Justice Reform</h1>
     <div className="flex-row">
-      <div
-        className="two-thirds-top"
-        style={{ margin: `10px 0 30px 0`, maxWidth: `400px`, marginLeft: `100px` }}
-      >
+      <div className="two-thirds-top blueprint-top">
         <Img sizes={data.cover.sizes} />
       </div>
       <SummaryBox techs={['indesign', 'illustrator']} />

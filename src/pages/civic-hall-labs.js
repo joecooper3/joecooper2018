@@ -8,7 +8,7 @@ const CivicHallLabs = ({ data }) => ( // eslint-disable-line
   <div className="main-body-portfolio">
     <h1>Civic Hall Labs</h1>
     <div className="flex-row">
-      <div className="two-thirds-top" style={{ margin: `10px 0 30px 0` }}>
+      <div className="two-thirds-top">
         <Img sizes={data.chlSpread.sizes} />
       </div>
       <SummaryBox techs={['css', 'javascript', 'illustrator']} />

@@ -90,24 +90,23 @@
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    margin-top: 50px;
 }
 .two-thirds-top {
     flex: 1 1 450px;
     width: 100%;
     max-width: 700px;
-    padding: 0 25px;
+    padding: 25px 25px 0 25px;
 }
 .two-thirds {
     flex: 1 1 450px;
     width: 100%;
     max-width: 600px;
-    padding: 0 25px;
+    padding: 25px;
 }
 .one-third {
     flex: 1 1 300px;
     max-width: 400px;
-    padding: 0 25px;
+    padding: 25px;
 }
 .summary-box {
     background-color: $mywhite;
@@ -137,6 +136,10 @@
     span {
         margin-left: 10px;
     }
+}
+.blueprint-top {
+    margin: 10px 0px 30px 100px;
+    max-width: 400px;
 }
 .white-block-nav, .tan-block-nav {
     display: flex;
@@ -186,6 +189,19 @@
 }
 .tan-block-nav {
     background-color: $tan;
+}
+@media (max-width: 900px) {
+    .one-third {
+        max-width: 700px;
+    }
+}
+@media (max-width: 885px) {
+    .blueprint-top {
+        margin: 20px 0;
+    }
+    .two-thirds-top {
+        margin-bottom: 25px;
+    }
 }
 @media (max-width: 570px) {
     h2  {

@@ -8,7 +8,7 @@ const CasesMiscDesign = ({ data }) => ( // eslint-disable-line
   <div className="main-body-portfolio">
     <h1>Miscellaneous CASES Designs</h1>
     <div className="flex-row">
-      <div className="two-thirds-top" style={{ margin: `10px 0 30px 0` }}>
+      <div className="two-thirds-top">
         <p>
           The Center for Alternative Sentencing and Employment Services (CASES) is an organization
           dedicated to increasing public health and safety through its innovative, evidence-based
