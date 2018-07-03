@@ -15,6 +15,7 @@ const ContactPage = ({ data }) => ( //eslint-disable-line
       method="POST"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
+      action="/contact-submitted"
     >
       <p className="hidden">
         <label htmlFor="bot-field">
@@ -27,7 +28,7 @@ const ContactPage = ({ data }) => ( //eslint-disable-line
       </label>
       <label htmlFor="form-email">
         <span>Email</span>
-        <input id="form-email" type="email" name="_replyto" placeholder="Email" />
+        <input id="form-email" type="email" name="replyto" placeholder="Email" />
       </label>
       <label htmlFor="form-body">
         <span>Message</span>
