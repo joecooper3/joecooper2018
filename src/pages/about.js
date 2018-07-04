@@ -15,17 +15,18 @@ const AboutPage = ({ data }) => ( //eslint-disable-line
     </p>
 
     <p>
-      I’ve been dabbling in web design since I was 11, during the halcyon days of AOLPress. Since
-      then, I’ve broadened my horizons to include visual design of all kinds, including print
-      collateral, Powerpoint presentations, infographics, and flow charts. (That is to say, if it
-      involves design and computers, I’m probably into it.) I’m passionate about social justice and
-      have offered my services to a number of non-profit organizations and NGOs, including CASES,
-      Civic Hall Labs, NYC BigApps, the Legal Action Center, the ATI/Reentry Coalition,
-      Entertainment Impact, ELMA, and Lantern.
+      I’ve been dabbling in web design since I was 11, during the halcyon days of{' '}
+      <a href="https://en.wikipedia.org/wiki/AOLpress" target="_blank" rel="noopener noreferrer">
+        AOLPress
+      </a>. I began offering front-end design and development services professionally to clients in
+      2014 and broadened my horizons to include visual design of all kinds. I’m passionate about
+      social justice and have offered my services to a number of non-profit organizations and NGOs,
+      including CASES, Civic Hall Labs, NYC BigApps, the Legal Action Center, the ATI/Reentry
+      Coalition, Entertainment Impact, ELMA, and Lantern.
     </p>
 
     <p>
-      In addition to anything design, I also enjoy experimental music, retro gaming, and futilely
+      In addition to anything design, I also enjoy experimental music, old video games, and futilely
       rooting for the Buffalo Bills.
     </p>
     <p className="button-container">
