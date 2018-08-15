@@ -20,7 +20,7 @@ const CasesPortal = ({ data }) => ( // eslint-disable-line
       <p>
         The CASES Portal is an internal operations application, featuring a robust staff directory
         with live search, communications catalog, and custom-built pages for the organization’s
-        adminstrative units.
+        administrative units.
       </p>
       <p>
         The portal was developed in response to staff concerns about internal communications. Over
