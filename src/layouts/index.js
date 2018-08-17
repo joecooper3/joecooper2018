@@ -260,7 +260,7 @@ export default Layout;
 
 export const query = graphql // eslint-disable-line
 `
-  query Alright {
+  query Alright2 {
     theScript: file(name: { regex: "/prod/" }) {
       publicURL
     }
