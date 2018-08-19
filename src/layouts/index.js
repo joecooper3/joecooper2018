@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import './normalize.css';
 import './style.css';
@@ -10,10 +11,10 @@ import briefcase from '../images/Briefcase-Grid.png';
 
 class Layout extends Component {
   componentDidMount() {
-    const script = document.createElement('script');
-    script.src = this.props.data.theScript.publicURL;
-    script.async = true;
-    document.body.appendChild(script);
+    const aniScript = document.createElement('script');
+    aniScript.src = this.props.data.theScript.publicURL;
+    aniScript.defer = true;
+    document.body.appendChild(aniScript);
   }
   render() {
     return (
@@ -123,11 +124,11 @@ class Layout extends Component {
               view the rest of it.
             </p>
           </div>
-          <a className="scroll-arrow" href="#trigger1mid">
+          <AnchorLink className="scroll-arrow" href="#trigger1mid">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
               <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
             </svg>
-          </a>
+          </AnchorLink>
         </section>
         <section id="section1" className="light">
           <div id="bigno1" className="big-number">
@@ -145,8 +146,7 @@ class Layout extends Component {
               </p>
               <p>
                 I have production experience with preprocessors, module bundlers, task runners,
-                JavaScript frameworks, and I know Flexbox and CSS Grid better than some family
-                members.{' '}
+                JavaScript frameworks, Flexbox, and CSS Grid.{' '}
               </p>
             </div>
           </div>
@@ -180,12 +180,7 @@ class Layout extends Component {
                 Oh, and incidentally, I did have a brief foray with Visual Composer a few years ago.
               </p>
             </div>
-            <img
-              id="animate2image"
-              src={wordpress}
-              alt="Wordpress logo"
-              style={{ width: '250px' }}
-            />
+            <img id="animate2image" src={wordpress} alt="Wordpress logo" />
           </div>
         </section>
         <section id="section3" className="light">
@@ -235,9 +230,9 @@ class Layout extends Component {
         <section id="bottom">
           <h1>More About Me</h1>
           <p>
-            Hey, you made it to the bottom! If you've stuck with me to the end, there's no sense in
-            letting this be the end. <a href="mailto:joe@joecooper.nyc">Shoot me a note</a> or check
-            out my links below.
+            Hey, you made it to the bottom! If you're still with me, there's no sense in letting
+            this be the end. <a href="mailto:joe@joecooper.nyc">Shoot me a note</a> or check out my
+            links below.
           </p>
           <div className="btn-container">
             <a

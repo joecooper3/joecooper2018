@@ -7,28 +7,8 @@
     src: url('fonts/Theinhardt-Regular.otf');
   }
   @font-face {
-    font-family: 'TheinRegIta';
-    src: url('fonts/Theinhardt-RegularIta.otf');
-  }
-  @font-face {
-    font-family: 'TheinThin';
-    src: url('fonts/Theinhardt-Thin.otf');
-  }
-  @font-face {
-    font-family: 'TheinLight';
-    src: url('fonts/Theinhardt-Light.otf');
-  }
-  @font-face {
-    font-family: 'TheinLightIta';
-    src: url('fonts/Theinhardt-LightIta.otf');
-  }
-  @font-face {
     font-family: 'TheinBold';
     src: url('fonts/Theinhardt-Bold.otf');
-  }
-  @font-face {
-    font-family: 'TheinBoldIta';
-    src: url('fonts/Theinhardt-BoldIta.otf');
   }
   @font-face {
     font-family: 'TheinHeavy';
@@ -516,7 +496,7 @@ section.dark p a:hover {
 
 @media all and (max-height: 700px) {
     .main-container img {
-        max-width: 150px;
+        max-width: 200px;
     }
 }
 
