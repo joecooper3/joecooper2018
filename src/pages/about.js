@@ -9,13 +9,14 @@ const AboutPage = ({ data }) => ( //eslint-disable-line
       <Img sizes={data.itMeToo.sizes} />
     </div>
     <p>
-      I’m a front-end developer and graphic designer based in New York City. For the past six years,
-      I’ve worked full-time at CASES where I currently serve as its Associate Director of
-      Communications and Design.
+      I’m a front-end developer and designer currently working at
+      <a href="https://www.madwell.com" target="_blank" rel="noopener noreferrer">
+        Madwell
+      </a>, a Brooklyn-based advertising agency.
     </p>
 
     <p>
-      I’ve been dabbling in web design since I was 11, during the halcyon days of{' '}
+      I’ve been dabbling in web design since I was 11, during the halcyon days of
       <a href="https://en.wikipedia.org/wiki/AOLpress" target="_blank" rel="noopener noreferrer">
         AOLPress
       </a>. I began offering front-end design and development services professionally to clients in
