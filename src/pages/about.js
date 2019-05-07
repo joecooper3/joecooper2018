@@ -9,7 +9,7 @@ const AboutPage = ({ data }) => ( //eslint-disable-line
       <Img sizes={data.itMeToo.sizes} />
     </div>
     <p>
-      I’m a front-end developer and designer currently working at
+      I’m a front-end developer and designer currently working at{' '}
       <a href="https://www.madwell.com" target="_blank" rel="noopener noreferrer">
         Madwell
       </a>, a Brooklyn-based advertising agency.
