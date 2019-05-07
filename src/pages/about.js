@@ -16,7 +16,7 @@ const AboutPage = ({ data }) => ( //eslint-disable-line
     </p>
 
     <p>
-      I’ve been dabbling in web design since I was 11, during the halcyon days of
+      I’ve been dabbling in web design since I was 11, during the halcyon days of{' '}
       <a href="https://en.wikipedia.org/wiki/AOLpress" target="_blank" rel="noopener noreferrer">
         AOLPress
       </a>. I began offering front-end design and development services professionally to clients in
